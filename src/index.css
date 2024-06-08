@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* :root { */
+    /* --blue-primary: #0077CC; */
+    /* --green-accent: #33CC99; */
+    /* --gray-light: #F7F7F7; */
+/* } */
 
 @font-face {
     font-family: 'ClashVariable';
     src: local('ClashVariable'),
          url("./assets/fonts/clashDisplayVariable.woff2") format('woff2'),
 
+}
+
+* {
+  font-family: "ClashVariable", Verdana, Geneva, Tahoma, sans-serif;
 }

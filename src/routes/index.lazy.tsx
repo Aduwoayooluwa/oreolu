@@ -1,11 +1,16 @@
 import { Box } from '@chakra-ui/react'
 import { createLazyFileRoute } from '@tanstack/react-router'
+import Sidebar from '../layout/sidebar.layout'
 
 export const Route = createLazyFileRoute('/')({
-  component: () => <Index />
+    component: () => <Index />
 })
 
 
 export const Index = () => {
-    return <Box className="bg-red-900">Things on things</Box>
+    return <Box className="">
+        <Sidebar>
+            <div></div>
+        </Sidebar>
+    </Box>
 }
