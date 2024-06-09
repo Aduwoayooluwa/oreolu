@@ -8,9 +8,9 @@ export const SidebarItems = [
     }
     ,
     {
-        name: "Courses",
+        name: "Modules",
         icon: CoursesIcon,
-        link: "/courses"
+        link: "/modules"
     }
     ,
     {

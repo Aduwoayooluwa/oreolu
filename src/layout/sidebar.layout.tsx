@@ -3,7 +3,7 @@ import { Logo } from "../components/logo"
 import { SidebarItems } from "./sidebar-items.layout"
 import { SidebarItemComponent } from "../types/layout.types"
 import { Link } from "@tanstack/react-router"
-import { Button } from "../components/button"
+// import { Button } from "../components/button"
 
 
 const ItemComponent = ({ item }: SidebarItemComponent) => {
@@ -24,7 +24,7 @@ const Sidebar = ({ children }: {
     children: React.ReactNode
 }) => {
     return (
-        <HStack width="full">
+        <HStack width="full" alignItems="start">
             <VStack alignItems={"start"} display={{ base: "none", md: "block" }} spacing={8} height="100vh" w="20%" bg="white" p={4}>
                 <header>
                     <Logo />
@@ -38,8 +38,8 @@ const Sidebar = ({ children }: {
                 </VStack>
 
             </VStack>
-            <Box minH="100vh" w="100%" bg="gray.100">
-                <Button>Hello world</Button>
+            <Box minH="100vh" p={6} w="100%" bg="gray.100">
+                {/* <Button>Hello world</Button> */}
                 {children}
             </Box>
         </HStack>
